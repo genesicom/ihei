@@ -1,0 +1,29 @@
+@import "https://unpkg.com/open-props";
+@import "https://unpkg.com/open-props/normalize.min.css";
+
+:root {
+	--color-bg: var(--gray-11);
+	--color-bg: var(--gray-1);
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-bg: var(--gray-11);
+		--color-text: var(--gray-1);
+	}
+}
+
+body {
+	font-family: var(--font-sans);
+	background: var(--color-bg);
+	color: var(--color-text);
+}
+
+nav, main, footer {
+	max-width: 60em;
+	margin-inline: auto;
+}
+
+main {
+	margin-block: var(--size-5);
+}
